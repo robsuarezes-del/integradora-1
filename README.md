@@ -26,3 +26,4 @@ Robinson Eduardo Suárez Luna
 
 ## Repositorio
 https://github.com/robsuarezes-del/integradora-1
+## Estructura del proyecto
