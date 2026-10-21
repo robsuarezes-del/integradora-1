@@ -1,0 +1,261 @@
+:root {
+    --color-principal: #123458;
+    --color-secundario: #2563a6;
+    --color-fondo: #f3f6fa;
+    --color-blanco: #ffffff;
+    --color-texto: #243247;
+    --color-acento: #38bdf8;
+    --sombra: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color: var(--color-blanco);
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.encabezado {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 25px 0;
+}
+
+.encabezado h1 {
+    font-size: 2rem;
+}
+
+.encabezado p {
+    margin-bottom: 15px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.menu a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: var(--color-acento);
+}
+
+.principal {
+    background: linear-gradient(135deg, #e7f3ff, #ffffff);
+    padding: 80px 0;
+}
+
+.principal-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.principal-contenido > div:first-child {
+    flex: 1;
+}
+
+.principal h2 {
+    font-size: 2.5rem;
+    color: var(--color-principal);
+    margin: 10px 0;
+}
+
+.principal p {
+    margin-bottom: 20px;
+}
+
+.etiqueta {
+    color: var(--color-secundario);
+    font-weight: bold;
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: var(--color-principal);
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: var(--color-principal);
+    color: var(--color-acento);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.seccion {
+    padding: 65px 0;
+}
+
+.seccion h2 {
+    color: var(--color-principal);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.seccion > .contenedor > p {
+    max-width: 850px;
+}
+
+.fondo-claro {
+    background-color: var(--color-fondo);
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.tarjeta {
+    flex: 1 1 220px;
+    padding: 25px;
+    background-color: var(--color-blanco);
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta h3 {
+    color: var(--color-secundario);
+    margin-bottom: 10px;
+}
+
+.proyecto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 600px;
+    margin-top: 25px;
+}
+
+.formulario label {
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: 2px solid var(--color-acento);
+    border-color: var(--color-secundario);
+}
+
+.formulario button {
+    padding: 13px;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: var(--color-principal);
+}
+
+.nota {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+.pie {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 25px 0;
+}
+
+.pie a {
+    color: var(--color-acento);
+    text-decoration: none;
+}
+
+.pie a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .principal-contenido {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .principal h2 {
+        font-size: 2rem;
+    }
+
+    .menu {
+        gap: 12px;
+    }
+
+    .avatar {
+        min-width: 140px;
+        height: 140px;
+    }
+}
+}
