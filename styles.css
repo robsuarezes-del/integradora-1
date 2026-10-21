@@ -166,16 +166,17 @@ body {
     margin-bottom: 10px;
 }
 
+
 .proyecto img {
     width: 100%;
     height: auto;
+    max-height: none;
     object-fit: contain;
     object-position: center;
     border-radius: 8px;
     margin-bottom: 15px;
     display: block;
 }
-
 .formulario {
     display: flex;
     flex-direction: column;
@@ -183,7 +184,6 @@ body {
     max-width: 600px;
     margin-top: 25px;
 }
-
 .formulario label {
     font-weight: bold;
 }
