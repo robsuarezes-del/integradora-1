@@ -27,3 +27,6 @@ Robinson Eduardo Suárez Luna
 ## Repositorio
 https://github.com/robsuarezes-del/integradora-1
 ## Estructura del proyecto
+- `index.html`: estructura y contenido de la página web.
+- `styles.css`: estilos y diseño visual del portafolio.
+- `img/`: carpeta que contiene las imágenes utilizadas en el proyecto.
